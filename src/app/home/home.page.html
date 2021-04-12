@@ -1,0 +1,52 @@
+<ion-content [scrollEvents] = "true" (ionScroll) = "onScroll($event)">
+  <div #header class = "header">
+    
+    <ion-grid>
+      <ion-row class = "ion-text-left  ion-align-item-center">
+        <ion-col size = "2">
+          <img src = "/assets/img/logo.png">
+        </ion-col>
+        <ion-button routerLink="/login" fill ='clear' class='exit' >Sair</ion-button>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+  <div class="content ion-padding">
+    <div class="title ion-margin-vertical">
+      <span>Prévias</span>
+    </div>
+
+    <ion-slides class = "stories" [options] = "slidesOptions">
+      <ion-slide *ngFor= "let story of stories">
+        <ion-img [src] = "story.Poster"></ion-img> <!--Em folder.page.ts tem imagem poster com tal propriedade (Poster)-->
+      </ion-slide>
+    </ion-slides>
+
+    <div class="title ion-margin-vertical">
+      <span>Minha Lista</span>
+    </div>
+
+    <ion-slides class = "lists" [options] = "slidesOptions">
+      <ion-slide *ngFor= "let movie of movies">
+        <ion-img [src] = "movie.Poster"></ion-img> <!--Em folder.page.ts tem imagem do movie poster-->
+      </ion-slide>
+    </ion-slides>
+
+    <div class="title ion-margin-vertical">
+      <span>Continuar assistindo</span>
+    </div>
+
+    <ion-slides class = "lists" [options] = "slidesOptions">
+      <ion-slide *ngFor= "let movie of movies">
+        <ion-img [src] = "movie.Poster"></ion-img> <!--Em folder.page.ts tem imagem do movie poster-->
+      </ion-slide>
+    </ion-slides>
+  </div>
+</ion-content>

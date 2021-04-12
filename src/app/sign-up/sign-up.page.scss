@@ -1,0 +1,58 @@
+ion-content {
+  --background: #000000;
+.header {
+  position: fixed;
+  top: 5vh;
+  width: 120%;
+  height: 10px;
+  z-index: 1;
+  transition: background-color 0.3s;
+
+  &.dark {
+    background-color: #000;
+  }
+
+  img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    left: 39%;
+    position: relative;
+  }
+}
+
+.form h1{
+  margin-left: 46.5%;
+  margin-bottom: 20px;
+}
+
+.form ion-input {
+  width: 35%;
+  background-color: #333333;
+  margin: auto;
+}
+.form ion-button {
+  height: 48px;
+  font-size: 18px;
+  position: relative;
+  left: 45%;
+  width: 10%;
+  text-transform: initial;
+}
+.cadastrar {
+  width: 50%;
+}
+
+.voltar {
+  background: none;
+}
+
+.form {
+  margin-top: 8%;
+  padding-left: 30px;
+  padding-right: 30px;
+  top: 20vh;
+  position: relative;
+}
+
+}
